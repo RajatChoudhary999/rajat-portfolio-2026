@@ -1,0 +1,39 @@
+# Prerequisites
+bin/
+obj/
+
+# Source Control
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build Output
+[arch]/
+[debug]/
+[release]/
+x64/
+x86/
+BuildLog.htm
+*.bak
+*.cache
+*.log
+
+# Dependencies
+node_modules/
+bower_components/
+vendor/
+
+# Environment / Secrets
+.env
+*.pem
+*.key
+certs/
+
+# OS Generated
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
