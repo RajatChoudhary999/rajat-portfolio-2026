@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 export default function ContactSection() {
   return (
     <section id="contact" className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-      <Reveal className="rounded-[2.5rem] border border-white/10 bg-[linear-gradient(135deg,rgba(242,104,56,0.16),rgba(87,193,184,0.16))] p-8 sm:p-10">
+      <Reveal className="rounded-[2.5rem] border border-white/10 bg-[linear-gradient(135deg,rgba(212,180,131,0.16),rgba(141,116,81,0.16))] p-8 sm:p-10">
         <p className="text-sm uppercase tracking-[0.35em] text-[var(--color-accent-soft)]">Contact</p>
         <h2 className="mt-4 max-w-3xl font-display text-4xl text-white sm:text-5xl">
           Need a full stack engineer who can move from product idea to shipped system?
@@ -43,6 +43,8 @@ export default function ContactSection() {
     </section>
   );
 }
+
+
 
 
 

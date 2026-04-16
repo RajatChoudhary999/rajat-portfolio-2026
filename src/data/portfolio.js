@@ -1,29 +1,29 @@
 ﻿export const profile = {
   name: "Rajat Choudhary",
-  title: "Full Stack Software Engineer",
+  title: "Senior Full Stack Engineer",
   tagline:
-    "Production-grade web, backend, and mobile systems for teams that care about shipping fast without losing engineering rigor.",
+    "End-to-end product ownership across React, Node.js, React Native, PostgreSQL, and AWS for production B2B SaaS systems.",
   summary:
-    "Full stack engineer with 3+ years of experience architecting and delivering production web and mobile applications. Strong in Node.js, TypeScript, React, React Native, PostgreSQL, AWS, and end-to-end ownership from schema design to polished delivery.",
+    "Senior Full Stack Engineer with 4+ years of experience owning production B2B SaaS systems serving 4,000+ weekly active users. Expert in Node.js, TypeScript, React, React Native, PostgreSQL, and AWS, with proven delivery across architecture, backend systems, frontend applications, and deployment.",
   location: "Chandigarh, India",
   email: "rajrajatchoudhary4@gmail.com",
   phone: "+91 98764 11094",
   company: "Linear (Imparo Technologies Pvt Ltd)",
-  resumeHref: "/resume/Rajat_Resume.pdf",
+  resumeHref: "/resume/Rajat_Full_Stack_Engineer.pdf",
   availability:
     "Available for product builds, contract work, and engineering collaborations.",
   roles: [
-    "Full Stack Development",
+    "Senior Full Stack Engineering",
     "Frontend Engineering",
     "Backend Engineering",
     "Mobile Development",
   ],
   highlights: [
-    "Built and shipped a React Native learning app from scratch for an enterprise platform serving 4,000+ weekly active users.",
-    "Reduced manual operational workflows by 73% by owning backend APIs, PostgreSQL schema design, and admin tooling end to end.",
-    "Improved platform reliability with a service worker caching strategy that cut load time by 7% and reduced fetch failures by 13%.",
-    "Scaled automated certificate generation and AWS S3 delivery to support 7,000+ monthly downloads.",
-    "Delivered fintech payment systems with automated fee calculation and reconciliation flows across Razorpay and Cashfree integrations.",
+    "Shipped 290+ PRDs across the product lifecycle, from schema design and REST APIs to React and React Native delivery.",
+    "Built and owned a React Native mobile application from scratch as the sole developer, targeting Google Play Store release.",
+    "Reduced operational workflows by 73% through a full enterprise admin platform with RBAC, bulk onboarding, and reporting.",
+    "Engineered a service-worker caching architecture that reduced load time by 7% and cut data fetch failures by 13%.",
+    "Automated 7,000+ monthly challenge review deliveries through AWS S3 and AWS SES workflows.",
   ],
 };
 
@@ -35,8 +35,8 @@ export const socials = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/rajat-choudhary-299570175/",
-    value: "rajat-choudhary-299570175",
+    href: "https://www.linkedin.com/in/rajatchoudhary999/",
+    value: "rajatchoudhary999",
   },
   {
     label: "X",
@@ -46,10 +46,10 @@ export const socials = [
 ];
 
 export const stats = [
-  { value: "3+", label: "Years building production software" },
+  { value: "4+", label: "Years owning production software" },
   { value: "4,000+", label: "Weekly active users supported" },
-  { value: "7,000+", label: "Monthly document downloads automated" },
-  { value: "34+", label: "Public GitHub repositories" },
+  { value: "290+", label: "PRDs shipped across the product lifecycle" },
+  { value: "7,000+", label: "Monthly automated deliveries" },
 ];
 
 export const certifications = [
@@ -68,12 +68,13 @@ export const skillGroups = [
     title: "Frontend",
     items: [
       "React.js",
-      "React Native (Expo)",
-      "Tailwind CSS",
+      "React Native",
+      "Redux Toolkit",
       "MUI",
+      "NativeWind",
+      "PWA",
       "HTML5",
       "CSS3",
-      "Service Workers",
     ],
   },
   {
@@ -81,10 +82,10 @@ export const skillGroups = [
     items: [
       "Node.js",
       "Express.js",
+      "NestJS",
       "REST APIs",
+      "Microservices",
       "Spring Boot",
-      "Spring Security",
-      "WebSockets",
     ],
   },
   {
@@ -93,22 +94,27 @@ export const skillGroups = [
       "PostgreSQL",
       "MongoDB",
       "DynamoDB",
+      "Materialized Views",
       "AWS EC2",
       "AWS S3",
+      "AWS RDS",
+      "AWS SES",
       "AWS Cognito",
-      "RDS",
-      "CI/CD",
+      "Google Play Store",
     ],
   },
   {
-    title: "Engineering Focus",
+    title: "Security & Systems",
     items: [
+      "Microsoft SSO (Entra ID)",
+      "Google SSO",
+      "RBAC",
+      "JWT",
       "System Design",
-      "Authentication",
-      "Caching",
+      "Service Workers",
+      "Broadcast Channel API",
+      "Data Modeling",
       "Bulk Processing",
-      "Automated Testing",
-      "Payment Flows",
     ],
   },
 ];
@@ -117,35 +123,37 @@ export const experience = [
   {
     title: "Software Development Engineer",
     company: "Linear (Imparo Technologies Pvt Ltd)",
-    meta: "B2B SaaS | Chennai, India",
+    meta: "B2B SaaS | 4,000+ Weekly Active Users | Chennai, India",
     period: "March 2023 - Present",
     bullets: [
-      "Architected and shipped a React Native (Expo) mobile application from scratch, defining the end-to-end data flow, API integrations, and secure authentication experience.",
-      "Designed RESTful backend APIs with Node.js, TypeScript, Express.js, and PostgreSQL, powering an enterprise admin dashboard that reduced manual workflows by 73%.",
-      "Implemented a network-first service worker caching strategy that cut load time by 7% and reduced data-fetch failures by 13%.",
-      "Built an automated certificate generation system integrated with AWS S3 and bulk CSV onboarding flows for 7,000+ monthly downloads.",
-      "Designed and delivered a full-stack in-app notification system using AWS DynamoDB, including data modeling and read-dismiss workflows.",
+      "Architected and shipped a React Native mobile application from scratch as the sole developer, covering auth flows, challenge engine, leaderboard, program schedule, tracks system, and Lottie-powered interactions for Google Play Store release.",
+      "Designed and built the entire enterprise admin panel from scratch with org, group, and user management, RBAC across three role levels, bulk CSV onboarding, role-enforced API middleware, and MUI Data Grid reporting, reducing operational workflows by 73%.",
+      "Engineered an advanced caching architecture using Service Workers, Broadcast Channel API, and Post Message API, reducing load time by 7% and cutting data fetch failures by 13% while eliminating hard-refresh requirements.",
+      "Built an automated challenge review pipeline that extracted challenge data, generated Word documents, uploaded them to AWS S3, and triggered delivery through AWS SES to group admins.",
+      "Implemented a complete subscription and payments system from scratch, including free trial workflow, day-based expiry, enrollment restrictions, upgrade confirmation flow, and Razorpay payment link integration.",
+      "Integrated Microsoft SSO (Entra ID) and Google SSO through AWS Cognito for multi-tenant authentication and published the web app as a PWA to Google Play Store using PWA Builder.",
+      "Built an in-app notification system on AWS DynamoDB with custom data model, state transitions, read and dismiss APIs, relative timestamps, and analytics dashboards with charts, metrics, and user comparison reports.",
     ],
   },
   {
     title: "Junior Software Engineer Intern",
     company: "Infino",
-    meta: "Fintech Startup | Bangalore, India (Remote)",
+    meta: "Fintech Startup | Payment Management Solutions | Bangalore, India (Remote)",
     period: "July 2022 - December 2022",
     bullets: [
-      "Delivered a full-stack fintech MVP using React, Node.js, Express, and MongoDB, with 43% test coverage across payment-critical flows.",
-      "Built a payment reconciliation dashboard with multi-gateway support that reduced reconciliation time by 17% for finance teams.",
-      "Implemented automated fee calculation across UPI, cards, and net banking using Razorpay and Cashfree SDKs.",
+      "Delivered a full-stack fintech MVP using React, Node.js, Express, and MongoDB with 43% test coverage across critical payment flows, shipped to the company’s first B2C client.",
+      "Built a payment reconciliation dashboard with MUI Data Grid and multi-gateway support, reducing reconciliation time by 17%.",
+      "Automated fee calculation through Razorpay and Cashfree SDK integrations across payment workflows.",
     ],
   },
   {
     title: "Software Engineer Intern",
     company: "Nagarro",
-    meta: "Global Enterprise Consultancy | Gurugram, India",
+    meta: "Global Enterprise Software Consultancy | Gurugram, India",
     period: "January 2022 - April 2022",
     bullets: [
-      "Built features for an internal staff enrollment platform using Java and Spring Boot.",
-      "Implemented Spring Security controls and optimized database queries for a 5% reduction in response time.",
+      "Built features for an internal enrollment platform using Java and Spring Boot.",
+      "Implemented Spring Security controls and improved query performance, reducing response time by 5%.",
     ],
   },
 ];
@@ -156,32 +164,16 @@ export const featuredProjects = [
     label: "NestJS CRUD Microservices",
     stack: ["TypeScript", "NestJS", "Microservices"],
     summary:
-      "Production-style microservices system with independently deployable CRUD services, inter-service communication patterns, and scalable backend design.",
+      "Independently deployable CRUD microservices with inter-service message patterns and scalable service isolation.",
     repoUrl: "https://github.com/RajatChoudhary999/nestjs-crud-microservices",
   },
   {
     name: "chat_app",
     label: "Real-Time Chat Application",
-    stack: ["Node.js", "JavaScript", "WebSockets"],
+    stack: ["Node.js", "WebSockets"],
     summary:
-      "Persistent real-time messaging with room-based communication, concurrent connections, and live event broadcasting.",
+      "WebSocket-based real-time chat supporting concurrent connections, room messaging, and live event broadcasting.",
     repoUrl: "https://github.com/RajatChoudhary999/chat_app",
-  },
-  {
-    name: "ecommerce-discount-api",
-    label: "E-Commerce Discount API",
-    stack: ["Node.js", "JavaScript", "REST API"],
-    summary:
-      "Flexible discount engine for cart-level calculations with clean API contracts ready for frontend integration.",
-    repoUrl: "https://github.com/RajatChoudhary999/ecommerce-discount-api",
-  },
-  {
-    name: "redux-toolkit-habit-tracker",
-    label: "Redux Toolkit Habit Tracker",
-    stack: ["TypeScript", "React", "Redux Toolkit"],
-    summary:
-      "Full-featured habit tracking app with streak logic, normalized state, and predictable global store architecture.",
-    repoUrl: "https://github.com/RajatChoudhary999/redux-toolkit-habit-tracker",
   },
 ];
 
