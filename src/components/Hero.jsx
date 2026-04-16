@@ -62,7 +62,7 @@ export default function Hero() {
             <h2 className="mt-3 font-display text-3xl text-white">{profile.name}</h2>
             <p className="mt-4 text-base leading-7 text-[var(--color-text-muted)]">{profile.summary}</p>
           </div>
-          <div className="hidden h-14 w-14 rounded-full bg-[radial-gradient(circle_at_30%_30%,#ffe2a6,transparent_35%),linear-gradient(135deg,#f26838,#57c1b8)] md:block" />
+          <div className="hidden h-14 w-14 rounded-full bg-[radial-gradient(circle_at_30%_30%,#f7ead8,transparent_35%),linear-gradient(135deg,#d4b483,#8d7451)] md:block" />
         </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -74,7 +74,7 @@ export default function Hero() {
           ))}
         </div>
 
-        <div className="mt-8 rounded-[1.5rem] border border-[rgba(255,186,73,0.3)] bg-[rgba(242,104,56,0.08)] p-5">
+        <div className="mt-8 rounded-[1.5rem] border border-[rgba(212,180,131,0.28)] bg-[rgba(141,116,81,0.12)] p-5">
           <p className="text-sm uppercase tracking-[0.35em] text-[var(--color-accent)]">Client Fit</p>
           <p className="mt-3 text-base leading-7 text-white">
             {profile.availability}
@@ -84,6 +84,8 @@ export default function Hero() {
     </section>
   );
 }
+
+
 
 
 
