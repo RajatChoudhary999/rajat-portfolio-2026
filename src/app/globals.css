@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* 60% Butter Cream */
+    --color-cream-base: #F5EEDC;
+    --color-cream-card: #FAF6ED;
+    --color-cream-elevated: #FFFDF8;
+    --color-cream-border: rgba(32, 37, 31, 0.12);
+    --color-cream-border-subtle: rgba(32, 37, 31, 0.08);
+
+    /* 30% Forest Green */
+    --color-green-deep: #0E3525;
+    --color-green-primary: #174D38;
+    --color-green-surface: #1E5C44;
+    --color-green-card: #134230;
+    --color-green-border: rgba(245, 238, 220, 0.18);
+
+    /* 10% Hot Pink */
+    --color-pink-primary: #F45B91;
+    --color-pink-hover: #E4477F;
+    --color-pink-soft: rgba(244, 91, 145, 0.14);
+
+    /* Neutrals */
+    --color-ink-primary: #20251F;
+    --color-ink-secondary: #454D41;
+    --color-olive-muted: #78816B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-cream-base);
+    color: var(--color-ink-primary);
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background-color: var(--color-cream-base);
+    color: var(--color-ink-primary);
+    font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif), Newsreader, Garamond, Georgia, serif;
+    font-feature-settings: "onum" 1, "pnum" 1;
+  }
+
+  .font-sans {
+    font-family: var(--font-sans), "Plus Jakarta Sans", sans-serif;
+  }
+
+  code,
+  kbd,
+  samp,
+  pre,
+  .font-mono {
+    font-family: var(--font-mono), "Geist Mono", monospace;
+    font-feature-settings: "tnum" 1, "zero" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F5EEDC;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #174D38;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0E3525;
+  }
+}
+
+/* Subtle editorial paper texture & grid */
+.bg-cream-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(23, 77, 56, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 77, 56, 0.05) 1px, transparent 1px);
+}
+
+.bg-green-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 238, 220, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 238, 220, 0.06) 1px, transparent 1px);
+}
+
+/* Print Stylesheet for Native Resume */
+@media print {
+  header,
+  footer,
+  #home,
+  #about,
+  #work,
+  #experience,
+  #contact,
+  .no-print {
+    display: none !important;
+  }
+
+  body,
+  html,
+  main,
+  #resume {
+    background: #ffffff !important;
+    color: #111111 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .print-page {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

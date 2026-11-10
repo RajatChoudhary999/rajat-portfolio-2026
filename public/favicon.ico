@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#174D38"/>
+  <rect x="3" y="3" width="58" height="58" rx="13" fill="none" stroke="#F5EEDC" stroke-width="1.5" stroke-opacity="0.3"/>
+  <!-- Monogram R -->
+  <path d="M16 46V18h12c6.2 0 10 3.6 10 9 0 4.2-2.5 7.4-6.8 8.4L42 46h-6.2l-9.8-9.8H22V46H16Zm6-15h5.5c3.2 0 5-1.8 5-4.2s-1.8-4.2-5-4.2H22V31Z" fill="#F5EEDC"/>
+  <!-- Hot Pink Accent Dot -->
+  <circle cx="46" cy="43" r="5" fill="#F45B91"/>
+</svg>
