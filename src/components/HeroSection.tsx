@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { ArrowDownIcon, DownloadIcon, ClockIcon } from "@/components/Icons";
+import { ArrowDownIcon, DownloadIcon } from "@/components/Icons";
 import LottieAnimation from "@/components/LottieAnimation";
 import { heroSystemAnimation } from "@/data/lottieAnimations";
 
@@ -57,7 +57,10 @@ export default function HeroSection() {
                 href="#experience"
                 className="inline-flex items-center gap-2 rounded-xl border border-[#174D38]/30 hover:border-[#174D38] bg-[#FAF6ED] hover:bg-[#FFFDF8] px-5 py-3.5 font-mono text-xs font-bold text-[#174D38] transition-all shadow-sm"
               >
-                <ClockIcon className="w-4 h-4 text-[#F45B91]" />
+                <svg className="w-4 h-4 text-[#F45B91]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
                 <span>Experience Timeline</span>
               </a>
 
