@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node -e \"const fs=require('fs'); if(fs.existsSync('.next')) fs.rmSync('.next', {recursive:true, force:true})\" && next dev",
     "dev:clean": "node -e \"const fs=require('fs'); fs.rmSync('.next', {recursive:true, force:true})\" && next dev",
     "clean": "node -e \"const fs=require('fs'); fs.rmSync('.next', {recursive:true, force:true})\"",
     "build": "next build && node -e \"const fs=require('fs'); if(fs.existsSync('.next') && !fs.existsSync('.next/fallback-build-manifest.json')) fs.writeFileSync('.next/fallback-build-manifest.json', '{}')\"",
